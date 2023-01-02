@@ -14,19 +14,28 @@
 }
 
 :root {
-  --bg-color1: rgb(36, 36, 36);
+  --bg-color1: rgb(0,0,0);
   --bg-color2: rgb(255, 255, 255);
   --sh-c: rgb(0, 0, 0);
   --b-c: rgb(255, 255, 255);
   --b-c2: rgb(36, 36, 36);
-  --color1: rgb(0, 0, 0);
-  --color2: rgb(255, 255, 255);
-  --color3: rgb(0, 153, 255);
+  --color2: red;
+  --color3: white;
   --body-font: 'Poppins', sans-serif;
   --content-font: 'Zen Old Mincho', serif;
   --H1-font: 'Share Tech Mono', monospace;
   --twr-spd: 2s;
   --fid1-spd: 1s;
+}
+
+/*VIDEO*/
+
+#bgrd_vid {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 /*NAV*/
@@ -36,8 +45,8 @@ nav {
     margin-left: auto;
     margin-right: auto;
     padding-top: 40px;
-    padding-bottom: 50px;
-    background-color: var(--bg-color1);
+    padding-bottom: 40px;
+    background-image: linear-gradient(to top, rgba(255,0,0,0), rgba(0,0,0,1));
 }
 
 nav a {
@@ -101,16 +110,16 @@ main {
 /*ABOUT H1 ANIM*/
 
 .abouth1 {
-  font-size: 50px;
-  padding-top: 15px;
-  text-align: center;
-  font-weight: bolder;
-  position: relative;
-  width: max-content;
-  font-family: var(--H1-font);
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--color2)
+    font-size: 50px;
+    padding-top: 15px;
+    text-align: center;
+    font-weight: bolder;
+    position: relative;
+    width: max-content;
+    font-family: var(--H1-font);
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--color2);
 }
 
 .abouth1::before,
@@ -126,36 +135,6 @@ right: 0;
 .abouth1::before {
 background: var(--bg-color1);
 animation: typew var(--twr-spd) steps(20) forwards;
-}
-
-/*INDEX H1 ANIM*/
-
-.indexh1 {
-    font-size: 50px;
-    padding-top: 15px;
-    text-align: center;
-    font-weight: bolder;
-    position: relative;
-    width: max-content;
-    font-family: var(--H1-font);
-    margin-left: auto;
-    margin-right: auto;
-    color: var(--color2)
-}
-
-.indexh1::before,
-.indexh1::after {
-content: '';
-position: absolute;
-top: 0;
-bottom: 0;
-left: 0;
-right: 0;
-}
-
-.indexh1::before {
-  background: var(--bg-color1);
-  animation: typew var(--twr-spd) steps(17) forwards;
 }
 
 /*FADE IN ANIM*/
@@ -179,7 +158,6 @@ transform: translateY(-15px);
 
 .myr {
   grid-area: wel;
-  background-color: var(--bg-color1);
   line-height: 50px;
   height: 50px;
   color: var(--color3);
@@ -407,12 +385,12 @@ transform: translateY(-15px);
 }
 
 footer {
-  font-size: 18px;
-  font-style: italic;
-  bottom: 0;
-  color: var(--color2);
-  background-color: var(--bg-color1);
-  padding-bottom: 10px;
+    font-size: 18px;
+    font-style: italic;
+    bottom: 0;
+    color: var(--color2);
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(0,0,0,1));
+    padding-bottom: 10px;
 }
 
 /*ANIMATIONS*/
@@ -436,12 +414,13 @@ h2, h3, h4 {
 }
 
 body {
-  height: 100vh;
-  background-color: #f1d592;
-  color: var(--color1);
-  font-family: var(--body-font);
-  text-align: center;
-  overflow-y: auto;
+    height: 100vh;
+    background-image: url(bgrd.gif);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: var(--body-font);
+    text-align: center;
+    overflow-y: auto;
 }
 
 li {
@@ -451,9 +430,6 @@ li {
 }
 
 header {
-  text-align: center;
-}
-
-header {
-  background-color: var(--bg-color1)
+    text-align: center;
+    background-color: black;
 }
