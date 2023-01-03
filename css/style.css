@@ -99,10 +99,15 @@ nav a:hover {
 }
 
 main {
-    display: grid;
-    grid-area: main;
     margin-right: 350px;
     margin-left: 350px;
+}
+
+.abmainc {
+    display: grid;
+    grid-area: main;
+    grid-template-areas:
+        'nolpic r-c';
 }
 
 /*ABOUT H1 ANIM*/
@@ -377,7 +382,6 @@ transform: translateY(-15px);
 }
 
 footer {
-    display: block;
     font-size: 18px;
     font-style: italic;
     bottom: 0;
