@@ -87,7 +87,7 @@ nav a:hover {
   padding-bottom: 10px;
 }
 
-.maingrid {
+.contact {
   display: grid;
   grid-template-areas:
   'wel wel'
@@ -103,11 +103,12 @@ main {
     margin-left: 350px;
 }
 
-.abmainc {
+.grid1 {
     display: grid;
     grid-area: main;
+    text-align: center;
     grid-template-areas:
-        'nolpic r-c';
+        'nolpic contact';
 }
 
 /*ABOUT H1 ANIM*/
@@ -151,7 +152,6 @@ transform: translateY(-15px);
 }
 
 .nol {
-  margin-top: 35px;
   opacity: 0;
   transform: translateY(-15px);
   animation: fid1 1s ease forwards;
@@ -225,7 +225,7 @@ transform: translateY(-15px);
   padding-right: 50px;
 }
 
-.qual {
+.qual2 {
   padding-bottom: 15px;
   background-color: var(--bg-color1);
   line-height: 50px;
@@ -256,6 +256,9 @@ transform: translateY(-15px);
   transform: translateY(-15px);
   animation: fid1 1s ease var(--twr-spd) forwards;
 }
+
+.rio {
+text-align: left;}
 
 .wrkh2 {
   grid-area: wrkh2;
