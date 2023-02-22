@@ -380,6 +380,18 @@ transform: translateY(-15px);
   animation-delay: 2.5s;
 }
 
+.dendet {
+font-size: 18px;
+padding-top: 15px;
+padding-bottom: 5px;
+}
+
+.f2wdet {
+font-size: 18px;
+padding-top: 15px;
+padding-bottom: 5px;
+}
+
 /*FOOTER*/
 
 .FB {
