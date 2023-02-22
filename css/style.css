@@ -91,8 +91,10 @@ nav a:hover {
   display: grid;
   grid-template-areas:
   'wel wel'
-  'adr cont';
+  'adr cont'
+  'qual qual';
   padding-top: 30px;
+  padding-left: 100px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -103,12 +105,24 @@ main {
     margin-left: 350px;
 }
 
+.qual {
+grid-area: qual;}
+
 .grid1 {
     display: grid;
     grid-area: main;
     text-align: center;
     grid-template-areas:
-        'nolpic contact';
+        'nolpic cont';
+}
+
+.grid2 {
+    display: grid;
+    grid-area: main;
+    text-align:center;
+    grid-template-areas:
+        'rel rel'
+        'g1 g2';
 }
 
 /*ABOUT H1 ANIM*/
@@ -342,7 +356,6 @@ text-align: left;}
 
 .adr {
   grid-area: adr;
-  padding-bottom: 30px;
   text-align: justify;
   padding-left: 50px;
   opacity: 0;
@@ -353,7 +366,6 @@ text-align: left;}
 
 .cont {
   grid-area: cont;
-  padding-bottom: 30px;
   text-align: justify;
   padding-left: 50px;
   opacity: 0;
