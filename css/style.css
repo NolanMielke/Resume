@@ -268,7 +268,6 @@ transform: translateY(-15px);
   grid-area: eduh;
   line-height: 50px;
   height: 50px;
-  margin-bottom: 15px;
   background-color: var(--bg-color1);
   width: max-content;
   margin-left: auto;
@@ -279,9 +278,6 @@ transform: translateY(-15px);
   transform: translateY(-15px);
   animation: fid1 1s ease var(--twr-spd) forwards;
 }
-
-.rio {
-text-align: left;}
 
 .wrkh2 {
   grid-area: wrkh2;
@@ -315,7 +311,7 @@ text-align: left;}
   animation-delay: 2.5s;
 }
 
-.qualifications p {
+.qual p {
   padding-bottom: 15px;
   opacity: 0;
   transform: translateY(-15px);
@@ -351,6 +347,7 @@ text-align: left;}
   animation: fid1 1s ease forwards;
   animation-delay: 2.5s;
   padding-bottom: 15px;
+  padding-top: 15px;
 }
 
 .rel {
@@ -360,7 +357,7 @@ text-align: left;}
   animation: fid1 1s ease forwards;
   animation-delay: 2.5s;
   grid-area: rel;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
 }
 
 .adr {
