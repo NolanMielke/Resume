@@ -125,6 +125,15 @@ grid-area: qual;}
         'g1 g2';
 }
 
+.grid3 {
+    display: grid;
+    grid-area: main;
+    text-align: center;
+    grid-template-areas:
+        'wrkh2 wrkh2'
+        'w1 w2';
+}
+
 /*ABOUT H1 ANIM*/
 
 .abouth1 {
