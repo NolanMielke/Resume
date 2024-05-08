@@ -1,6 +1,6 @@
 /*
   Name: Nolan Mielke
-  Date: 1/2/2023
+  Date: 11/22/2023
 */ 
 
 @import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@700&display=swap'); /*Main text*/
@@ -63,6 +63,25 @@ nav a:hover {
     border: 5px solid var(--color);
 }
 
+/*BUTTON*/
+
+#button {
+    margin-right: 15px;
+    margin-left: 15px;
+    text-decoration: none;
+    border: 5px solid var(--color2);
+    color: var(--color2);
+    font-size: 24px;
+    padding: 10px;
+    background-color: var(--bg-color1);
+}
+
+    #button:hover {
+        background-color: var(--bg-color1);
+        color: var(--color);
+        border: 5px solid var(--color);
+        }
+
 /*GRID ELEMENTS*/
 
 .secgrid {
@@ -78,7 +97,8 @@ nav a:hover {
   display: grid;
   grid-template-areas:
   'wrkh2 wrkh2'
-  'w1 w2';
+  'w1 w1'
+  'w2 w3';
   padding-top: 30px;
   text-align: center;
 }
@@ -101,8 +121,8 @@ nav a:hover {
 }
 
 main {
-    margin-right: 350px;
-    margin-left: 350px;
+width: 75vw;
+margin: auto;
 }
 
 .qual {
@@ -121,8 +141,8 @@ grid-area: qual;}
     grid-area: main;
     text-align:center;
     grid-template-areas:
-        'rel rel'
-        'g1 g2';
+        'rel rel rel rel'
+        'g1 g2 g3 g4';
 }
 
 .grid3 {
@@ -131,12 +151,62 @@ grid-area: qual;}
     text-align: center;
     grid-template-areas:
         'wrkh2 wrkh2'
-        'w1 w2';
+        'w1 w1'
+        'w2 w3';
 }
 
-/*ABOUT H1 ANIM*/
+.grid4 {
+    display: grid;
+    grid-area: main;
+    text-align: center;
+    grid-template-areas:
+        'n1 n2';
+}
 
-.abouth1 {
+.grid5 {
+    display: grid;
+    grid-area: main;
+    text-align: center;
+    margin-top: 15px;
+    grid-template-areas:
+        'pw2 pw1';
+}
+
+
+/*SLIDESHOW*/
+
+#slideshow1 {
+    position: relative;
+    height: 510px;
+    width: 510px;
+    border: 5px solid white;
+}
+
+    #slideshow1 > div {
+        position: absolute;
+        margin: 0;
+    }
+
+#slideshow2 {
+    position: relative;
+    height: 510px;
+    width: 510px;
+    border: 5px solid white;
+}
+
+    #slideshow2 > div {
+        position: absolute;
+        margin: 0;
+    }
+
+/*H1 ANIMATIONS - UNIVERSAL PROPERTIES*/
+
+.resumeh1,
+.nerkah1,
+.homeh1,
+.workh1,
+.contacth1,
+.projh1 {
     font-size: 75px;
     padding-top: 15px;
     text-align: center;
@@ -149,19 +219,65 @@ grid-area: qual;}
     color: var(--color2);
 }
 
-.abouth1::before,
-.abouth1::after {
-content: '';
-position: absolute;
-top: 0;
-bottom: 0;
-left: 0;
-right: 0;
+.resumeh1::before,
+.resumeh1::after,
+.nerkah1::before,
+.nerkah1::after,
+.homeh1::before,
+.homeh1::after,
+.workh1::before,
+.workh1::after,
+.contacth1::before,
+.contacth1::after,
+.projh1::before,
+.projh1::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
-.abouth1::before {
+/*HOME*/
+
+.homeh1::before{
+background: var(--bg-color1);
+animation: typew var(--twr-spd) steps(7) forwards;
+}
+/*RESUME*/
+
+.resumeh1::before{
 background: var(--bg-color1);
 animation: typew var(--twr-spd) steps(20) forwards;
+}
+
+/*NERKA*/
+
+.nerkah1::before {
+ background: var(--bg-color1);
+ animation: typew var(--twr-spd) steps(11) forwards;
+ }
+
+/*WORKS*/
+
+.workh1::before {
+ background: var(--bg-color1);
+ animation: typew var(--twr-spd) steps(5) forwards;
+ }
+
+/*CONTACT*/
+
+.contacth1::before {
+ background: var(--bg-color1);
+ animation: typew var(--twr-spd) steps(10) forwards;
+ }
+
+/*PROJECTS*/
+
+.projh1::before {
+    background: var(--bg-color1);
+    animation: typew var(--twr-spd) steps(19) forwards;
 }
 
 /*FADE IN ANIM*/
@@ -172,6 +288,7 @@ animation: fid1 1s ease forwards;
 animation-delay: 2.5s;
 opacity: 0;
 transform: translateY(-15px);
+font-size: 24px;
 }
 
 .nol {
@@ -179,7 +296,14 @@ transform: translateY(-15px);
   transform: translateY(-15px);
   animation: fid1 1s ease forwards;
   animation-delay: 2.5s;
-  border: 5px solid var(--b-c2);
+  border: 5px solid var(--color);
+}
+
+.nerkapic {
+    opacity: 0;
+    transform: translateY(-15px);
+    animation: fid1 1s ease forwards;
+    animation-delay: 2.5s;
 }
 
 .myr {
@@ -196,6 +320,7 @@ transform: translateY(-15px);
   padding-right: 50px;
   margin-left: auto;
   margin-right: auto;
+  font-size: 36px;
 }
 
 .myn {
@@ -216,19 +341,20 @@ transform: translateY(-15px);
 }
 
 .wel {
-  grid-area: wel;
-  background-color: var(--bg-color1);
-  line-height: 50px;
-  height: 50px;
-  margin-bottom: 15px;
-  opacity: 0;
-  transform: translateY(-15px);
-  animation: fid1 1s ease var(--twr-spd) forwards;
-  width: max-content;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin-left: auto;
-  margin-right: auto;
+    grid-area: wel;
+    background-color: var(--bg-color1);
+    line-height: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+    opacity: 0;
+    transform: translateY(-15px);
+    animation: fid1 1s ease var(--twr-spd) forwards;
+    width: max-content;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 52px;
 }
 
 .wel2 {
@@ -254,14 +380,11 @@ transform: translateY(-15px);
   line-height: 50px;
   height: 50px;
   width: max-content;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 60px;
-  padding-right: 60px;
-  margin-bottom: 15px;
+  margin: 0 auto 0 auto;
   opacity: 0;
   transform: translateY(-15px);
   animation: fid1 1s ease var(--twr-spd) forwards;
+  font-size: 48px;
 }
 
 .eduh {
@@ -277,6 +400,7 @@ transform: translateY(-15px);
   opacity: 0;
   transform: translateY(-15px);
   animation: fid1 1s ease var(--twr-spd) forwards;
+  font-size: 48px;
 }
 
 .wrkh2 {
@@ -290,17 +414,21 @@ transform: translateY(-15px);
   margin-right: auto;
   padding-left: 60px;
   padding-right: 60px;
+  padding-top: 30px;
+  padding-bottom: 60px;
   opacity: 0;
   transform: translateY(-15px);
-  animation: fid1 1s ease var(--twr-spd) forwards; 
+  animation: fid1 1s ease var(--twr-spd) forwards;
+  font-size: 48px;
 }
 
 .class1 {
-  grid-area: g1;
-  opacity: 0;
-  transform: translateY(-15px);
-  animation: fid1 1s ease forwards;
-  animation-delay: 2.5s;
+    grid-area: g1;
+    opacity: 0;
+    transform: translateY(-15px);
+    animation: fid1 1s ease forwards;
+    animation-delay: 2.5s;
+    font-size: 24px;
 }
 
 .class2 {
@@ -309,6 +437,25 @@ transform: translateY(-15px);
   transform: translateY(-15px);
   animation: fid1 1s ease forwards;
   animation-delay: 2.5s;
+  font-size: 24px;
+}
+
+.class3 {
+    grid-area: g3;
+    opacity: 0;
+    transform: translateY(-15px);
+    animation: fid1 1s ease forwards;
+    animation-delay: 2.5s;
+    font-size: 24px;
+}
+
+.class4 {
+    grid-area: g4;
+    opacity: 0;
+    transform: translateY(-15px);
+    animation: fid1 1s ease forwards;
+    animation-delay: 2.5s;
+    font-size: 24px;
 }
 
 .qual p {
@@ -327,27 +474,73 @@ transform: translateY(-15px);
   animation-delay: 2.5s;
   text-align: left;
   padding-bottom: 30px;
+  font-size: 24px;
+}
+    .work1 ol {
+    margin-left: 20vw;
 }
 
 .work2 {
-  grid-area: w2;
-  opacity: 0;
-  transform: translateY(-15px);
-  animation: fid1 1s ease forwards;
-  animation-delay: 2.5s;
-  text-align: left;
-  padding-left: 30px;
-  padding-bottom: 30px;
+    grid-area: w2;
+    opacity: 0;
+    transform: translateY(-15px);
+    animation: fid1 1s ease forwards;
+    animation-delay: 2.5s;
+    text-align: left;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    font-size: 24px;
+}
+
+.work3 {
+    grid-area: w3;
+    opacity: 0;
+    transform: translateY(-15px);
+    animation: fid1 1s ease forwards;
+    animation-delay: 2.5s;
+    text-align: left;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    font-size: 24px;
+}
+
+.nerka info {
+    grid-area: n1;
+}
+
+.nerka works {
+    grid-area: n2;
+}
+
+.pw info {
+    grid-area: pw1;
+}
+
+.pw works {
+    grid-area: pw2;
+}
+
+#result {
+text-align: left;
+margin-top: 20px;
 }
 
 .rio {
-  font-size: 20px;
   opacity: 0;
   transform: translateY(-15px);
   animation: fid1 1s ease forwards;
   animation-delay: 2.5s;
   padding-bottom: 15px;
   padding-top: 15px;
+}
+
+.rio_p {
+    padding-bottom: 15px;
+    opacity: 0;
+    transform: translateY(-15px);
+    animation: fid1 1s ease forwards;
+    animation-delay: 2.5s;
+    font-size: 24px;
 }
 
 .rel {
@@ -358,6 +551,7 @@ transform: translateY(-15px);
   animation-delay: 2.5s;
   grid-area: rel;
   padding-bottom: 30px;
+  font-size: 36px;
 }
 
 .adr {
@@ -370,24 +564,29 @@ transform: translateY(-15px);
   animation-delay: 2.5s;
 }
 
+    .adr p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 24px;
+    }
+
 .cont {
   grid-area: cont;
   text-align: justify;
-  padding-left: 50px;
+  padding-left: 35px;
   opacity: 0;
   transform: translateY(-15px);
   animation: fid1 1s ease forwards;
-  animation-delay: 2.5s;
 }
 
-.dendet {
-font-size: 18px;
-padding-top: 15px;
-padding-bottom: 5px;
+.cont p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 24px;
 }
 
-.f2wdet {
-font-size: 18px;
+.wrkdet {
+font-size: 24px;
 padding-top: 15px;
 padding-bottom: 5px;
 }
@@ -438,7 +637,7 @@ footer {
 
 h2, h3, h4 {
   text-align: center;
-  font-size: 24px;
+  font-size: 36px;
   text-align: center;
   font-weight: bolder;
 }
@@ -455,13 +654,7 @@ body {
     color: var(--color);
 }
 
-.mainc {
-padding-top: 19%;
-padding-bottom: 19%;
-}
-
 li {
-  margin-left: 25px;
   margin-top: 10px;
   list-style-type: square;
 }
