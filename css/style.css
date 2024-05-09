@@ -6,6 +6,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@700&display=swap'); /*Main text*/
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap'); /*H1 font*/
 
+@media screen and (max-width: 700px) {
+    body {
+        height: 100vh;
+        background-size: unset;
+        background-attachment: fixed;
+        font-family: var(--body-font);
+        text-align: center;
+        overflow-y: auto;
+        color: var(--color);
+    }
+}
 
 * {
   margin: 0px;
