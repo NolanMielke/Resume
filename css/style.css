@@ -104,6 +104,96 @@ nav a:hover {
         border: 5px solid var(--color);
         }
 
+/*GRID ELEMENTS*/
+
+.secgrid {
+  display: grid;
+  grid-template-areas:
+  'rel rel'
+  'g1 g2';
+  padding-top: 30px;
+  text-align: center;
+}
+
+.thrgrid {
+  display: grid;
+  grid-template-areas:
+  'wrkh2 wrkh2'
+  'w1 w1'
+  'w2 w3';
+  padding-top: 30px;
+  text-align: center;
+}
+
+.maingrid h2 {
+  padding-bottom: 10px;
+}
+
+.contact {
+  display: grid;
+  grid-template-areas:
+  'wel wel'
+  'adr cont'
+  'qual qual';
+  padding-top: 30px;
+  padding-left: 100px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main {
+width: 75vw;
+margin: auto;
+}
+
+.qual {
+grid-area: qual;}
+
+.grid1 {
+    display: grid;
+    grid-area: main;
+    text-align: center;
+    grid-template-areas:
+        'nolpic cont';
+}
+
+.grid2 {
+    display: grid;
+    grid-area: main;
+    text-align:center;
+    grid-template-areas:
+        'rel rel rel rel'
+        'g1 g2 g3 g4';
+}
+
+.grid3 {
+    display: grid;
+    grid-area: main;
+    text-align: center;
+    grid-template-areas:
+        'wrkh2 wrkh2'
+        'w1 w1'
+        'w2 w3';
+}
+
+.grid4 {
+    display: grid;
+    grid-area: main;
+    text-align: center;
+    grid-template-areas:
+        'n1 n2';
+}
+
+.grid5 {
+    display: grid;
+    grid-area: main;
+    text-align: center;
+    margin-top: 15px;
+    grid-template-areas:
+        'pw2 pw1';
+}
+
 
 /*SLIDESHOW*/
 
@@ -286,6 +376,23 @@ font-size: 24px;
     margin-left: auto;
     margin-right: auto;
     font-size: 52px;
+}
+
+.blurb {
+    grid-area: wel;
+    background-color: var(--bg-color1);
+    line-height: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+    opacity: 0;
+    transform: translateY(-15px);
+    animation: fid1 1s ease var(--twr-spd) forwards;
+    width: max-content;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 28px;
 }
 
 .wel2 {
