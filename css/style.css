@@ -234,7 +234,8 @@ grid-area: qual;}
     position: relative;
     width: max-content;
     font-family: var(--H1-font);
-    margin: 0 auto 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     color: var(--color2);
 }
 
