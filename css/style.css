@@ -221,12 +221,9 @@ grid-area: qual;}
 
 /*H1 ANIMATIONS - UNIVERSAL PROPERTIES*/
 
-.resumeh1,
-.nerkah1,
-.homeh1,
-.workh1,
-.contacth1,
-.projh1 {
+
+.nerkah1
+ {
     font-size: 75px;
     padding-top: 15px;
     text-align: center;
