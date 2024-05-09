@@ -6,32 +6,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@700&display=swap'); /*Main text*/
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap'); /*H1 font*/
 
-@media screen and (max-width: 700px) {
-    .bgrd {
-        height: 100vh;
-        background-image: url(bgrd.gif);
-        background-size: contain;
-        background-attachment: fixed;
-        font-family: var(--body-font);
-        text-align: center;
-        overflow-y: auto;
-        color: var(--color);
-    }
-}
-
-@media screen and (min-width: 700px) {
-    .bgrd {
-        height: 100vh;
-        background-image: url(bgrd.gif);
-        background-size: cover;
-        background-attachment: fixed;
-        font-family: var(--body-font);
-        text-align: center;
-        overflow-y: auto;
-        color: var(--color);
-    }
-}
-
 * {
   margin: 0px;
   padding: 0px;
@@ -61,6 +35,23 @@ body {
     overflow-y: auto;
     color: var(--color);
     display: block;
+}
+
+.classes li {
+    text-align: center;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 50px;
+    border-color: gray;
+    list-style-type: none;
+    margin: 0 auto 0 auto;
+}
+
+.classes {
+    text-align: center;
+    margin: 0 auto 0 auto;
+    border-spacing: 50px;
 }
 
 /*HEADER*/
@@ -481,8 +472,10 @@ font-size: 24px;
   font-size: 24px;
 }
     .work1 ol {
-    margin-left: 20vw;
-}
+        margin-left: 20vw;
+        margin-top: 10px;
+        list-style-type: square;
+    }
 
 .work2 {
     opacity: 0;
@@ -494,8 +487,10 @@ font-size: 24px;
     font-size: 24px;
 }
     .work2 ol {
-    margin-left: 20vw;
-}
+        margin-left: 20vw;
+        margin-top: 10px;
+        list-style-type: square;
+    }
 
 .work3 {
     opacity: 0;
@@ -507,8 +502,10 @@ font-size: 24px;
     font-size: 24px;
 }
     .work3 ol {
-    margin-left: 20vw;
-}
+        margin-left: 20vw;
+        margin-top: 10px;
+        list-style-type: square;
+    }
 
 .nerka info {
     grid-area: n1;
@@ -646,9 +643,4 @@ h2, h3, h4 {
   font-size: 36px;
   text-align: center;
   font-weight: bolder;
-}
-
-li {
-  margin-top: 10px;
-  list-style-type: square;
 }
