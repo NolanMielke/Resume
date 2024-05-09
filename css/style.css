@@ -7,9 +7,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap'); /*H1 font*/
 
 @media screen and (max-width: 700px) {
-    body {
+    .bgrd {
         height: 100vh;
-        background-size: unset;
+        background-image: url(bgrd.gif);
+        background-size: contain;
         background-attachment: fixed;
         font-family: var(--body-font);
         text-align: center;
@@ -18,7 +19,18 @@
     }
 }
 
-/*WTF*/
+@media screen and (min-width: 700px) {
+    .bgrd {
+        height: 100vh;
+        background-image: url(bgrd.gif);
+        background-size: cover;
+        background-attachment: fixed;
+        font-family: var(--body-font);
+        text-align: center;
+        overflow-y: auto;
+        color: var(--color);
+    }
+}
 
 * {
   margin: 0px;
@@ -41,14 +53,14 @@
   --fid1-spd: 1s;
 }
 
-/*VIDEO*/
-
-#bgrd_vid {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+body {
+    height: 100vh;
+    background-color: rgb(0,0,0);
+    font-family: var(--body-font);
+    text-align: center;
+    overflow-y: auto;
+    color: var(--color);
+    display: block;
 }
 
 /*HEADER*/
@@ -634,19 +646,6 @@ h2, h3, h4 {
   font-size: 36px;
   text-align: center;
   font-weight: bolder;
-}
-
-body {
-    height: 100vh;
-    background-image: url(bgrd.gif);
-    background-size: cover;
-    background-attachment: fixed;
-    background-color: rgb(0,0,0);
-    font-family: var(--body-font);
-    text-align: center;
-    overflow-y: auto;
-    color: var(--color);
-    display: block;
 }
 
 li {
