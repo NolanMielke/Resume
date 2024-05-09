@@ -334,6 +334,22 @@ font-size: 24px;
     font-size: 52px;
 }
 
+.blurb {
+    background-color: var(--bg-color1);
+    line-height: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+    opacity: 0;
+    transform: translateY(-15px);
+    animation: fid1 1s ease var(--twr-spd) forwards;
+    width: max-content;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+}
+
 .wel2 {
   background-color: var(--bg-color1);
   line-height: 50px;
