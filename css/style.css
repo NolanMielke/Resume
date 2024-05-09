@@ -1,10 +1,11 @@
 /*
   Name: Nolan Mielke
-  Date: 11/22/2023
+  Date: 5/8/2024
 */ 
 
 @import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@700&display=swap'); /*Main text*/
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap'); /*H1 font*/
+
 
 * {
   margin: 0px;
@@ -37,25 +38,33 @@
     min-height: 100%;
 }
 
+/*HEADER*/
+
+header {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 0 auto 0 auto;
+}
+
 /*NAV*/
 
 nav {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    width: 750px;
+    margin:0 auto;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 }
 
-nav a {
-   margin-right: 15px;
-   margin-left: 15px;
-   text-decoration: none;
-   border: 5px solid var(--color2);
-   color: var(--color2);
-   font-size: 24px;
-   padding: 10px;
-}
+    nav a {
+        margin-right: 15px;
+        margin-left: 15px;
+        text-decoration: none;
+        border: 5px solid var(--color2);
+        color: var(--color2);
+        font-size: 18px;
+        padding: 10px;
+    }
 
 nav a:hover {
     background-color: var(--bg-color1);
@@ -380,7 +389,7 @@ font-size: 24px;
   line-height: 50px;
   height: 50px;
   width: max-content;
-  margin: 0 auto 0 auto;
+  margin: 25px auto 25px auto;
   opacity: 0;
   transform: translateY(-15px);
   animation: fid1 1s ease var(--twr-spd) forwards;
@@ -397,6 +406,7 @@ font-size: 24px;
   margin-right: auto;
   padding-left: 60px;
   padding-right: 60px;
+  margin-top : 25px;
   opacity: 0;
   transform: translateY(-15px);
   animation: fid1 1s ease var(--twr-spd) forwards;
