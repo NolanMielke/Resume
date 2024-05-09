@@ -148,52 +148,8 @@ margin: auto;
 }
 
 .qual {
-grid-area: qual;}
-
-.grid1 {
-    display: grid;
-    grid-area: main;
-    text-align: center;
-    grid-template-areas:
-        'nolpic cont';
+grid-area: qual;
 }
-
-.grid2 {
-    display: grid;
-    grid-area: main;
-    text-align:center;
-    grid-template-areas:
-        'rel rel rel rel'
-        'g1 g2 g3 g4';
-}
-
-.grid3 {
-    display: grid;
-    grid-area: main;
-    text-align: center;
-    grid-template-areas:
-        'wrkh2 wrkh2'
-        'w1 w1'
-        'w2 w3';
-}
-
-.grid4 {
-    display: grid;
-    grid-area: main;
-    text-align: center;
-    grid-template-areas:
-        'n1 n2';
-}
-
-.grid5 {
-    display: grid;
-    grid-area: main;
-    text-align: center;
-    margin-top: 15px;
-    grid-template-areas:
-        'pw2 pw1';
-}
-
 
 /*SLIDESHOW*/
 
@@ -378,23 +334,6 @@ font-size: 24px;
     font-size: 52px;
 }
 
-.blurb {
-    grid-area: wel;
-    background-color: var(--bg-color1);
-    line-height: 50px;
-    height: 50px;
-    margin-bottom: 15px;
-    opacity: 0;
-    transform: translateY(-15px);
-    animation: fid1 1s ease var(--twr-spd) forwards;
-    width: max-content;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 28px;
-}
-
 .wel2 {
   background-color: var(--bg-color1);
   line-height: 50px;
@@ -506,7 +445,6 @@ font-size: 24px;
 }
 
 .work1 {
-  grid-area: w1;
   opacity: 0;
   transform: translateY(-15px);
   animation: fid1 1s ease forwards;
@@ -520,27 +458,29 @@ font-size: 24px;
 }
 
 .work2 {
-    grid-area: w2;
     opacity: 0;
     transform: translateY(-15px);
     animation: fid1 1s ease forwards;
     animation-delay: 2.5s;
     text-align: left;
-    padding-left: 30px;
     padding-bottom: 30px;
     font-size: 24px;
 }
+    .work2 ol {
+    margin-left: 20vw;
+}
 
 .work3 {
-    grid-area: w3;
     opacity: 0;
     transform: translateY(-15px);
     animation: fid1 1s ease forwards;
     animation-delay: 2.5s;
     text-align: left;
-    padding-left: 30px;
     padding-bottom: 30px;
     font-size: 24px;
+}
+    .work3 ol {
+    margin-left: 20vw;
 }
 
 .nerka info {
