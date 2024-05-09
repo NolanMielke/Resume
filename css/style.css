@@ -16,6 +16,18 @@
         overflow-y: auto;
         color: var(--color);
     }
+
+    .grid1 {
+    display: block;
+    }
+
+    .grid2 {
+        display: block;
+    }
+
+    .grid3 {
+        display: block;
+    }
 }
 
 * {
@@ -672,6 +684,7 @@ body {
     text-align: center;
     overflow-y: auto;
     color: var(--color);
+    display: block;
 }
 
 li {
