@@ -16,11 +16,6 @@
         overflow-y: auto;
         color: var(--color);
     }
-
-    .grid1 {
-    display: block;
-    grid-area: unset;
-    }
 }
 
 /*WTF*/
@@ -155,32 +150,6 @@ margin: auto;
 .qual {
 grid-area: qual;}
 
-.grid1 {
-    display: grid;
-    grid-area: main;
-    text-align: center;
-    grid-template-areas:
-        'nolpic cont';
-}
-
-.grid2 {
-    display: grid;
-    grid-area: main;
-    text-align:center;
-    grid-template-areas:
-        'rel rel rel rel'
-        'g1 g2 g3 g4';
-}
-
-.grid3 {
-    display: grid;
-    grid-area: main;
-    text-align: center;
-    grid-template-areas:
-        'wrkh2 wrkh2'
-        'w1 w1'
-        'w2 w3';
-}
 
 .grid4 {
     display: grid;
