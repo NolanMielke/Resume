@@ -19,16 +19,11 @@
 
     .grid1 {
     display: block;
-    }
-
-    .grid2 {
-        display: block;
-    }
-
-    .grid3 {
-        display: block;
+    grid-area: unset;
     }
 }
+
+/*AAA*/
 
 * {
   margin: 0px;
