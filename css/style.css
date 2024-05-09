@@ -17,6 +17,11 @@
         overflow-y: auto;
         color: var(--color);
     }
+
+    .nol {
+        width: 150px;
+        height: 150px;
+    }
 }
 
 @media screen and (min-width: 700px) {
@@ -29,6 +34,11 @@
         text-align: center;
         overflow-y: auto;
         color: var(--color);
+    }
+
+    .nol {
+        width: 600px;
+        height: 600px;
     }
 }
 
