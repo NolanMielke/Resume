@@ -523,6 +523,11 @@ font-size: 24px;
     grid-area: pw2;
 }
 
+#result {
+ text-align: left;
+ margin-top: 20px;
+ }
+
 .rio {
   opacity: 0;
   transform: translateY(-15px);
