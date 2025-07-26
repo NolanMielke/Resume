@@ -20,10 +20,10 @@ function showSlides(n) {
     slides[i].style.display = "none";  
   }
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" dotactive", "");
+    dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " dotactive";
+  dots[slideIndex-1].className += " active";
 }
 
 /* Slideshow 2 */
@@ -49,8 +49,8 @@ function showSlides2(n) {
     slides[i].style.display = "none";  
   }
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" dotactive2", "");
+    dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " dotactive2";
+  dots[slideIndex-1].className += " active";
 }
