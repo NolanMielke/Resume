@@ -88,6 +88,12 @@ nav a:hover {
     border: 5px solid var(--color);
 }
 
+.navactive {
+  background-color: var(--bg-color1);
+  color: var(--color);
+  border: 5px solid var(--color);
+}
+
 /*BUTTON*/
 
 #button {
@@ -154,31 +160,123 @@ margin: auto;
 grid-area: qual;
 }
 
+.grid4 {
+    display: grid;
+    grid-template-areas: 
+    'n1 n2';
+}
+
+.grid5 {
+    display: grid;
+    grid-template-areas: 
+    'pw2 pw1';
+}
+
 /*SLIDESHOW*/
 
-#slideshow1 {
-    position: relative;
-    height: 510px;
-    width: 510px;
-    border: 5px solid white;
+#slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
 
-    #slideshow1 > div {
-        position: absolute;
-        margin: 0;
-    }
-
-#slideshow2 {
-    position: relative;
-    height: 510px;
-    width: 510px;
-    border: 5px solid white;
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-    #slideshow2 > div {
-        position: absolute;
-        margin: 0;
-    }
+#slideshow_button {
+  text-align: center;
+  grid-template-areas: 'n2';
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 15px;
+  padding: 5px 0px 5px 0px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.caption {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 15px;
+  padding: 5px 0px 5px 0px;
+  position: absolute;
+  bottom: 15px;
+  width: 450px;
+  text-align: center;
+}
+
+.a-img .text {
+  max-width: 450px;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #717171;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dotactive, .dot:hover {
+  background-color: white;
+}
+
+.dot2 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #717171;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot2:hover {
+  background-color: white;
+}
 
 /*H1 ANIMATIONS - UNIVERSAL PROPERTIES*/
 
@@ -507,19 +605,19 @@ font-size: 24px;
         list-style-type: square;
     }
 
-.nerka info {
+.nerka-info {
     grid-area: n1;
 }
 
-.nerka works {
+.nerka-works {
     grid-area: n2;
 }
 
-.pw info {
+.pw-info {
     grid-area: pw1;
 }
 
-.pw works {
+.pw-works {
     grid-area: pw2;
 }
 

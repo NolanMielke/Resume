@@ -14,10 +14,10 @@
           <header>
               <h1 class="workh1">Works</h1>
               <nav id="nav">
-                  <a href="index.html" class="active">Home</a>
+                  <a href="index.html" class="parent">Home</a>
                   <a href="about.html" class="parent">Resume</a>
                   <a href="nerka.html" class="parent">Nerka Media</a>
-                  <a href="works.html" class="parent">Works</a>
+                  <a href="works.html" class="navactive">Works</a>
               </nav>
           </header>
       </section>
@@ -25,50 +25,195 @@
       <main>
           <!--Elaborate synopsis of the works I have completed. Including ones specifically for Nerka Media, as well as personal, professional, and education related works.-->
           <section class="grid4">
-              <section class="nerka info">
+              <section class="nerka-info">
                   <h2 class="myr">Nerka Media Works</h2>
                   <p class="mainp" style="margin-right: 30px; text-align: left;">With Nerka Media, I strive to take electronics which would otherwise seem unsightly or useless, and provide a new lease of life for them. For these projects, I go through meticulous multi-step processes to ensure that these controllers achieve a high standard of quality for not only aesthetic purposes, but also for practical physical interactions. It's more than just providing functionality and utility though, through my artistic interests and experiences, I can make these controllers look entirely new and truly one of a kind.</p>
                   <p class="mainp" style="margin-right: 30px; text-align: left;">The most prominent examples include the RGB LEDs seen in some of the controllers, where much time was invested in defining the best locations for LED placement, as well as the best technology for providing these functions. For example, the NES controller with color changing LEDs are controllable via a smartphone application, enabling the user to pick whatever color they desire for the buttons at any given time, as well as the brightness and speed of these patterning lights. Other examples include adding color to metallic themed controllers, which requires a specific process involving a chemical dye bath and implementations of chemistry and color theory to help create bold and enriching colors. The dye bath must be a specific temperature to prevent the plastic from melting, and colors can be mixed to create visually striking designs.</p>
               </section>
-              <section class="nerka works" style="margin-top: 60px;">
-                  <div class="mainp" id="slideshow1">
-                      <div> <img src="img\Works\Nerka\1.png" width="500" height="500" /> </div>
-                      <div> <img src="img\Works\Nerka\2.png" width="500" height="500" /> </div>
-                      <div> <img src="img\Works\Nerka\3.png" width="500" height="500" /> </div>
-                      <div> <img src="img\Works\Nerka\4.png" width="500" height="500" /> </div>
-                      <div> <img src="img\Works\Nerka\5.gif" width="500" height="500" /> </div>
-                      <div> <img src="img\Works\Nerka\6.png" width="500" height="500" /> </div>
-                      <div> <img src="img\Works\Nerka\7.png" width="500" height="500" /> </div>
-                      <div> <img src="img\Works\Nerka\8.png" width="500" height="500" /> </div>
-                      <div> <img src="img\Works\Nerka\9.png" width="500" height="500" /> </div>
-                      <div> <img src="img\Works\Nerka\10.png" width="500" height="500" /> </div>
-                  </div>
-              </section>
-          </section>
 
-          <section class="grid5">
-              <section class="pw works" style="margin-top: 50px;">
-                  <div class="mainp" id="slideshow2">
-                      <div> <img src="img\Works\PW\1.png" width="500" height="500" /> </div>
-                      <div> <img src="img\Works\PW\2.png" width="500" height="500" /> </div>
-                      <div> <img src="img\Works\PW\3.png" width="500" height="500" /> </div>
-                      <div> <img src="img\Works\PW\4.png" width="500" height="500" /> </div>
-                      <div> <img src="img\Works\PW\5.png" width="500" height="500" /> </div>
-                      <div> <img src="img\Works\PW\6.png" width="500" height="500" /> </div>
-                      <div> <img src="img\Works\PW\7.gif" width="500" height="500" /> </div>
-                      <div> <img src="img\Works\PW\8.png" width="500" height="500" /> </div>
-                      <div> <img src="img\Works\PW\9.png" width="500" height="500" /> </div>
-                      <div> <img src="img\Works\PW\10.png" width="500" height="500" /> </div>
-                  </div>
-              </section>
-              <section class="pw info">
-                  <h2 class="myr">Personal And Professional Works</h2>
-                  <p class="mainp" style="margin-left: 30px; text-align: left;">Through my personal and professional ventures, examples of various styles and compositions can be seen. I have a wide history of experience with two dimensional, as well as three dimensional design practices. Examples of image manipulation through tools such as Photoshop can be observed as well, along with examples of abstract photography, improvised brush work, and combining concepts together to develop unique designs.</p>
-                  <p class="mainp" style="margin-left: 30px; text-align: left;"> My sketchwork is unique in the development phase, as I prefer to not utilize pencils for my works and roll with the mistakes I make along the way. To me, it provides a sense of character and uniqueness to the design, acting as a puzzle to see what I can do with my mistakes. When it comes to my three dimensional designs, practicality is desired rather than realism. If I can communicate the ideal behind the piece, that matters more to me than designing it to realistic standards. However, the most fun I have with my works is when I can combine elements of three dimensional design with my two dimensional projects. The animated circles seen in the slideshow, as well as the background animation for this website are an excellent example of such a concept. I made the design in Blender 3D, then converted the result to a .gif file. It especially helps with representing character and complexity to my works, which is something I absolutely desire if nothing else.</p>
-              </section>
+            <section class="nerka-works" style="margin-top: 60px;">
 
-          </section>
-      </main>
+                <div class="mainp" id="slideshow-container">
+
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 10</div>
+                        <img src="img\Works\Nerka\1.png" style="width:400px">
+                        <div class="text">Edge Lord, GameCube</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 10</div>
+                        <img src="img\Works\Nerka\2.png" style="width:400px">
+                        <div class="text">Killer, Wii</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 10</div>
+                        <img src="img\Works\Nerka\3.png" style="width:400px">
+                        <div class="text">Golden Lily, GameCube</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 10</div>
+                        <img src="img\Works\Nerka\4.png" style="width:400px">
+                        <div class="text">Golden Lily RGB, PS4</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">5 / 10</div>
+                        <img src="img\Works\Nerka\5.gif" style="width:400px">
+                        <div class="text">Onyx Rainbow, NES</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">6 / 10</div>
+                        <img src="img\Works\Nerka\6.png" style="width:400px">
+                        <div class="text">Iceberg Shadow, N64</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">7 / 10</div>
+                        <img src="img\Works\Nerka\7.png" style="width:400px">
+                        <div class="text">Gothic Pink, GameCube</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">8 / 10</div>
+                        <img src="img\Works\Nerka\8.png" style="width:400px">
+                        <div class="text">Edge Lord, NES</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">9 / 10</div>
+                        <img src="img\Works\Nerka\9.png" style="width:400px">
+                        <div class="text">Amethyst, NES</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">10 / 10</div>
+                        <img src="img\Works\Nerka\10.png" style="width:400px">
+                        <div class="text">Golden Rainbow, GameCube</div>
+                    </div>
+
+                </div>
+
+                    <div class="mainp" id="slideshow_button">
+                        <span class="dot active" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span> 
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span> 
+                        <span class="dot" onclick="currentSlide(7)"></span>
+                        <span class="dot" onclick="currentSlide(8)"></span> 
+                        <span class="dot" onclick="currentSlide(9)"></span>
+                        <span class="dot" onclick="currentSlide(10)"></span>
+                    </div>
+
+            </section>
+
+        </section>
+
+        <section class="grid5">
+            
+            <section class="pw-info">
+
+                <h2 class="myr">Personal And Professional Works</h2>
+                <p class="mainp" style="margin-left: 30px; text-align: left;">Through my personal and professional ventures, examples of various styles and compositions can be seen. I have a wide history of experience with two dimensional, as well as three dimensional design practices. Examples of image manipulation through tools such as Photoshop can be observed as well, along with examples of abstract photography, improvised brush work, and combining concepts together to develop unique designs.</p>
+                <p class="mainp" style="margin-left: 30px; text-align: left;"> My sketchwork is unique in the development phase, as I prefer to not utilize pencils for my works and roll with the mistakes I make along the way. To me, it provides a sense of character and uniqueness to the design, acting as a puzzle to see what I can do with my mistakes. When it comes to my three dimensional designs, practicality is desired rather than realism. If I can communicate the ideal behind the piece, that matters more to me than designing it to realistic standards. However, the most fun I have with my works is when I can combine elements of three dimensional design with my two dimensional projects. The animated circles seen in the slideshow, as well as the background animation for this website are an excellent example of such a concept. I made the design in Blender 3D, then converted the result to a .gif file. It especially helps with representing character and complexity to my works, which is something I absolutely desire if nothing else.</p>
+            </section>
+
+            <section class="pw-works" style="margin-top: 50px;">
+
+                <div class="mainp" id="slideshow-container">
+
+                    <a class="prev" onclick="plusSlides2(-1)">❮</a>
+                    <a class="next" onclick="plusSlides2(1)">❯</a>
+
+                    <div class="mySlides2 fade">
+                        <div class="numbertext">1 / 10</div>
+                        <img src="img\Works\PW\1.png" style="width:400px">
+                        <div class="text">Edge Lord, GameCube</div>
+                    </div>
+
+                    <div class="mySlides2 fade">
+                        <div class="numbertext">2 / 10</div>
+                        <img src="img\Works\PW\2.png" style="width:400px">
+                        <div class="text">Killer, Wii</div>
+                    </div>
+
+                    <div class="mySlides2 fade">
+                        <div class="numbertext">3 / 10</div>
+                        <img src="img\Works\PW\3.png" style="width:400px">
+                        <div class="text">Golden Lily, GameCube</div>
+                    </div>
+
+                    <div class="mySlides2 fade">
+                        <div class="numbertext">4 / 10</div>
+                        <img src="img\Works\PW\4.png" style="width:400px">
+                        <div class="text">Golden Lily RGB, PS4</div>
+                    </div>
+
+                    <div class="mySlides2 fade">
+                        <div class="numbertext">5 / 10</div>
+                        <img src="img\Works\PW\5.png" style="width:400px">
+                        <div class="text">Onyx Rainbow, NES</div>
+                    </div>
+
+                    <div class="mySlides2 fade">
+                        <div class="numbertext">6 / 10</div>
+                        <img src="img\Works\PW\6.png" style="width:400px">
+                        <div class="text">Iceberg Shadow, N64</div>
+                    </div>
+
+                    <div class="mySlides2 fade">
+                        <div class="numbertext">7 / 10</div>
+                        <img src="img\Works\PW\7.gif" style="width:400px">
+                        <div class="text">Gothic Pink, GameCube</div>
+                    </div>
+
+                    <div class="mySlides2 fade">
+                        <div class="numbertext">8 / 10</div>
+                        <img src="img\Works\PW\8.png" style="width:400px">
+                        <div class="text">Edge Lord, NES</div>
+                    </div>
+
+                    <div class="mySlides2 fade">
+                        <div class="numbertext">9 / 10</div>
+                        <img src="img\Works\PW\9.png" style="width:400px">
+                        <div class="text">Amethyst, NES</div>
+                    </div>
+
+                    <div class="mySlides2 fade">
+                        <div class="numbertext">10 / 10</div>
+                        <img src="img\Works\PW\10.png" style="width:400px">
+                        <div class="text">Golden Rainbow, GameCube</div>
+                    </div>
+
+                </div>
+
+                    <div class="mainp" id="slideshow_button">
+                        <span class="dot2 active" onclick="currentSlide2(1)"></span> 
+                        <span class="dot2" onclick="currentSlide2(2)"></span> 
+                        <span class="dot2" onclick="currentSlide2(3)"></span>
+                        <span class="dot2" onclick="currentSlide2(4)"></span> 
+                        <span class="dot2" onclick="currentSlide2(5)"></span>
+                        <span class="dot2" onclick="currentSlide2(6)"></span> 
+                        <span class="dot2" onclick="currentSlide2(7)"></span>
+                        <span class="dot2" onclick="currentSlide2(8)"></span> 
+                        <span class="dot2" onclick="currentSlide2(9)"></span>
+                        <span class="dot2" onclick="currentSlide2(10)"></span>
+                    </div>
+
+            </section>
+
+        </section>
+
+    </section>
+</main>
 
       <footer>
 
@@ -84,10 +229,9 @@
 
           </section>
 
-          <span>&copy; 2023 Nolan Mielke</span><br>
+          <span>&copy; 2025 Nolan Mielke</span><br>
 
       </footer>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="js/main.js"></script>
   </body>
 </html>
